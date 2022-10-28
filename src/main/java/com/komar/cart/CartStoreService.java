@@ -30,4 +30,8 @@ public class CartStoreService {
         System.out.println();
 
     }
+
+    public void removeProduct(long productId) {
+        cartStoreRepository.removeProduct(productId);
+    }
 }

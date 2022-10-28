@@ -21,6 +21,7 @@ public class MainApp {
         cartStoryService2.createCart(5L);
         cartStoryService2.createCart(6L);
         cartStoryService2.createCart(4L);
+        cartStoryService2.removeProduct(1L);
         cartStoryService2.printCartList();
 
 
