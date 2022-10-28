@@ -30,6 +30,6 @@ public class ProductStoreRepository implements ProductRepository{
 
     @Override
     public Product findById(Long id) {
-        return products.stream().filter(p -> p.getId().equals(id)).findFirst().orElseThrow(() -> new RuntimeException());
+        return products.stream().filter(p -> p.getId().equals(id)).findFirst().orElseThrow(RuntimeException::new);
     }
 }

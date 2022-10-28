@@ -9,7 +9,7 @@ import java.util.List;
 @Scope("prototype")
 public interface CartRepository {
 
-    List<Product> allProductsInCart();
+    List<Product> allListProductsInCart();
     void addProduct(Long id);
     void removeProduct(Long id);
 }
